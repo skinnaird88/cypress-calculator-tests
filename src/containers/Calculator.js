@@ -93,10 +93,13 @@ function App() {
   }
 
   const divide = (number) => {
+      if (number == 0) {
+        setRunningTotal("Cannot divide by 0")}      
+      else {
     let calculatedNumber = parseFloat(previousTotal) / parseFloat(number);
     setRunningTotal(calculatedNumber);
     setCalculatedTotal(calculatedNumber);
-  }
+  }}
 
 
   return (
