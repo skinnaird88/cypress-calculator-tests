@@ -18,8 +18,14 @@ describe("Calculator", () => {
     cy.get('#number5').click();
     cy.get('#operator-multiply').click();
     cy.get('#number4').click();
+    cy.get('#operator_add').click();
+    cy.get('#number8').click();
+    cy.get('#operator-subtract').click();
+    cy.get('#number1').click();
+    cy.get('#operator-divide').click();
+    cy.get('#number9').click();
     cy.get('#operator-equals').click();
-    cy.get('.display').should('contain', '20')
+    cy.get('.display').should('contain', '3')
   })
 
   it('should be able to chain multiple operations together', () => {
