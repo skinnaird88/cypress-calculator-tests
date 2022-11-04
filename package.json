@@ -9,12 +9,13 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "^5.0.1",
+    "test": "^3.2.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "test:e2e": "cypress open"
   },
